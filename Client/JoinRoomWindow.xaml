@@ -1,0 +1,26 @@
+﻿<Window x:Class="Client.JoinRoomWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Background="#E6F0FA"
+        Title="Join Room"
+        Height="800"
+        Width="800"
+        ResizeMode="NoResize">
+
+    <Grid>
+        <Label x:Name="roomLabel"  Content="Rooms" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="75" Margin="0,10,0,0" FontFamily="Comic Sans MS"/>
+        <Border VerticalAlignment="Center" HorizontalAlignment="Center" Width="264" Height="500" BorderBrush="Black" BorderThickness="3"/>
+        <Button Content="Join Room" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="40" Margin="150,676,0,0" Height="66" Width="236" FontFamily="Comic Sans MS" Click="Click_Join"/>
+        <Button Content="Refresh" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="40" Margin="414,676,0,0" Height="66" Width="236" FontFamily="Comic Sans MS" Click="Click_Refresh"/>
+        <Button x:Name="GoBackButton" Content="->" Width="51" FontSize="25" Height="42" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="690,36,0,0" Click="Click_GoBack" FontFamily="Comic Sans MS" RenderTransformOrigin="0.497,0.609"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="268,142,268,142">
+            <StackPanel x:Name="RoomPanel">
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+</Window>

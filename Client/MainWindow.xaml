@@ -1,0 +1,22 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Background="#E6F0FA"
+        Title="Main"
+        Height="800"
+        Width="800"
+        ResizeMode="NoResize">
+
+    <Grid>
+        <TextBox x:Name="UsernameBox" FontSize="20" Width="439" Height="29" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,273,0,0" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="PasswordBox" FontSize="20" Width="439" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,314,0,0" FontFamily="Comic Sans MS"/>
+        <Button x:Name ="LoginButton" Content="Login" Width="197" FontSize="25" Height="71" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="576,273,0,0" Click="Click_Login" FontFamily="Comic Sans MS"/>
+        <Label x:Name ="UsernameLabel" Content="Username" FontSize="20" Margin="10,270,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="108" Height="40" RenderTransformOrigin="-0.041,-0.124" FontFamily="Comic Sans MS"/>
+        <Label x:Name ="PasswordLabel" Content="Password" FontSize="20" Margin="10,310,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="113" Height="44" RenderTransformOrigin="-0.041,-0.124" FontFamily="Comic Sans MS"/>
+        <Button x:Name="SignupButton" Content="Signup" Width="252" FontSize="25" Height="88" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,392,0,0" Click="Click_Signup" FontFamily="Comic Sans MS"/>
+    </Grid>
+</Window>

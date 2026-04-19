@@ -1,0 +1,31 @@
+﻿<Window x:Class="Client.RoomWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Background="#E6F0FA"
+        Title="Room"
+        Height="800"
+        Width="800"
+        ResizeMode="NoResize">
+
+    <Grid>
+        <Border VerticalAlignment="Center" HorizontalAlignment="Center" Width="390" Height="499" BorderBrush="Black" BorderThickness="3"/>
+        <Label FontFamily="Comic Sans MS" Content="" FontSize="50" x:Name="roomName" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top"  Height="99" Width="386" Margin="0,7,0,0"/>
+        <Label FontFamily="Comic Sans MS" Content="" FontSize="12" x:Name="maxPlayers" VerticalAlignment="Top" HorizontalAlignment="Right" Height="109" Width="136" Margin="0,106,514,0"/>
+        <Label FontFamily="Comic Sans MS" Content="" FontSize="12" x:Name="timePerQuestion" VerticalAlignment="Top" HorizontalAlignment="Left" Height="111" Width="204" Margin="291,106,0,0"/>
+        <Label FontFamily="Comic Sans MS" Content="" FontSize="12" x:Name="questionCount" VerticalAlignment="Top" HorizontalAlignment="Right" Height="112" Width="295" Margin="0,106,0,0"/>
+        <Button x:Name="RefreshButton" FontFamily="Comic Sans MS" Visibility="Collapsed" FontSize="40" VerticalAlignment="Top" HorizontalAlignment="Left" Content="Refresh Users" Margin="97,655,0,0" Height="79" Width="296" Click="Click_Refresh"/>
+        <Button x:Name="StartGameButton" FontFamily="Comic Sans MS" Visibility="Collapsed" FontSize="40" VerticalAlignment="Top" HorizontalAlignment="Left" Content="Start Game" Margin="412,655,0,0" Height="79" Width="296" Click="Click_StartGame"/>
+
+        <Button x:Name="GoBackButton" Visibility="Collapsed" Content="->" Width="51" FontSize="25" Height="42" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="690,36,0,0" Click="Click_GoBack" FontFamily="Comic Sans MS" RenderTransformOrigin="0.497,0.609"/>
+        <Button x:Name="CloseRoomButton" Visibility="Collapsed" Content="Close Room" Width="138" FontSize="25" Height="42" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="620,36,0,0" Click="Click_CloseRoom" FontFamily="Comic Sans MS" RenderTransformOrigin="0.497,0.609"/>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="208,143,205,142">
+            <StackPanel x:Name="PlayerCanvas">
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

@@ -1,0 +1,26 @@
+﻿<Window x:Class="Client.BestScoresWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Background="#E6F0FA"
+        Title="Best Scores"
+        Height="800"
+        Width="800"
+        ResizeMode="NoResize">
+    
+    <Grid>
+        <Label x:Name ="BestScoresLabel" Content="Best Scores" FontSize="50" Margin="0,57,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="340" Height="102" RenderTransformOrigin="-0.041,-0.124" FontFamily="Comic Sans MS"/>
+        <Border VerticalAlignment="Top" HorizontalAlignment="Center" Width="500" Height="500" BorderBrush="Black" BorderThickness="3" Margin="0,181,0,0"/>
+
+        <Label x:Name ="Player0Label" Content="" FontSize="37" Margin="192,209,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="780" Height="68" RenderTransformOrigin="-0.041,-0.124" FontFamily="Comic Sans MS"/>
+        <Label x:Name ="Player1Label" Content="" FontSize="37" Margin="192,301,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="780" Height="68" RenderTransformOrigin="-0.041,-0.124" FontFamily="Comic Sans MS"/>
+        <Label x:Name ="Player2Label" Content="" FontSize="37" Margin="192,397,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="780" Height="68" RenderTransformOrigin="-0.041,-0.124" FontFamily="Comic Sans MS"/>
+        <Label x:Name ="Player3Label" Content="" FontSize="37" Margin="192,487,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="780" Height="68" RenderTransformOrigin="-0.041,-0.124" FontFamily="Comic Sans MS"/>
+        <Label x:Name ="Player4Label" Content="" FontSize="37" Margin="192,578,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="780" Height="68" RenderTransformOrigin="-0.041,-0.124" FontFamily="Comic Sans MS"/>
+
+        <Button x:Name="GoBackButton" Content="->" Width="51" FontSize="25" Height="42" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="690,36,0,0" Click="Click_GoBack" FontFamily="Comic Sans MS" RenderTransformOrigin="0.497,0.609"/>
+    </Grid>
+</Window>

@@ -1,0 +1,9 @@
+# Ignore anything in Client and Trivia, But keep all first level files (Not folders).
+Client/**
+!Client/*.*
+Trivia/**
+!Trivia/*.*
+
+# Ignore .db and .vcxproj.user files.
+*.db
+*.vcxproj.user
